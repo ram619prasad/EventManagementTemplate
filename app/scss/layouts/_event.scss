@@ -1,0 +1,126 @@
+.event {  
+  &:hover {
+    border-top-color: $color-gold;
+    border-bottom-color: $color-gold;
+    border-collapse: collapse;
+    cursor: pointer;  
+    
+    .event__date {
+      opacity: 0
+    }
+    
+    .event__artist {
+      transform: translateX(-10rem);
+      color: $color-gold;
+      
+      & .fa {
+        opacity: 1;
+        color: $color-gold;
+      }
+    }
+    
+    &:last-child {
+      border-color: $color-gold;
+    }
+  }
+  
+  border-bottom: 2px solid $color-white;
+  border-top: 2px solid transparent;
+  padding: 5rem 0;
+  transition: all .4s ease-out;
+  
+  &:last-child {
+    border-color: transparent;
+  }
+  
+  & > div {
+    
+    &:not(:last-child) {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+  }
+  
+  &__date {
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    transition: all .2s ease-out;
+    
+    &--date {
+      font-size: 3rem;
+      padding: 0 1rem 0 4rem;
+    }
+    
+    &--day, &--month {
+      position: absolute;
+    }
+    
+    &--day {
+      color: $color-grey;
+      font-weight: bold;
+    }
+    
+    &--month {
+      top: 2rem;
+    }
+  }
+  
+  &__artist {
+    vertical-align: text-bottom;
+    margin-left: 5rem;
+    transition: all .4s ease-out;
+    display: inline-block;
+    
+    span {
+      font-size: 2rem;
+    }
+    
+    & .fa {
+      opacity: 0;
+      display: inline-block;
+      // padding: 2rem 0;
+      margin-left: 2rem;
+    }
+  }
+  
+  &__rsvp {
+    float: right;
+    & a {
+      padding: 1rem 2rem;
+    }
+  }
+  
+  &__details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    
+
+    & p {
+      width: 70%;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      color: $color-white;
+      font-family: lato;
+      margin-bottom: 1rem;
+      transition: all 2s;
+      
+      &:nth-child(2) {
+        margin-bottom: 3rem;
+      }
+      
+      &:last-child {
+        margin-top: 1rem;
+      }
+    }
+    
+    & a {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.active {
+  
+}

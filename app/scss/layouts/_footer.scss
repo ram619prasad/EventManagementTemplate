@@ -1,0 +1,73 @@
+.footer {
+  // position: fixed;
+  // bottom: 0;
+  position: relative;
+  padding: 2rem 0;
+  width: 80%;
+  margin: 0 auto;
+  top: 10rem;
+  // margin: 0 0 0 -40%;
+  // left:50%;
+  
+  & > div {
+    display: inline-block;
+  }
+  
+  & h2 {
+    color: $color-white;
+    margin-bottom: 3rem;
+    font-family: Lato;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  &__subscribe-form {
+    width: 60%;
+    & input {
+      display: inline-block;
+    }
+    
+    & input[type="email"] {
+      width: 60%;
+      height: 4rem;
+      margin-right: 4%;
+      border: none;
+      background: $color-black;
+      border: 1px solid $color-gold;
+      color: $color-gold;
+      padding: 2.5rem;
+      outline: none;
+    }
+    
+    & input::placeholder {
+      color: $color-gold;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    
+    & input[type="submit"] {
+      width: 35%;
+      height: 5rem;
+    }
+  }
+  
+  &__additional {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+  }
+  
+  &__follow {
+    margin-bottom: 3rem;
+    
+    & a {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+  }
+  
+  &__copyrights {
+    color: $color-gold;
+    font-size: 1.5rem;
+  }
+}

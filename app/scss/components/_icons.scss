@@ -1,0 +1,9 @@
+.fa {
+  color: $color-white;
+  font-size: 1.8rem;
+  transition: all .6s ease-out;
+  
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,49 @@
+@mixin customized-border($parent, $child) {
+  #{unquote($parent)}::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background: $color-gold;
+    width: 50%;
+    position: absolute;
+    left: -8%;
+    top: 4%;
+    transform-origin: 0%;
+    transform: rotate(90deg)
+  }
+
+  #{unquote($parent)}::after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background: $color-gold;
+    width: 60%;
+    position: absolute;
+    left: -8%;
+    top: 109%;
+  }
+  
+  $child::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background: $color-gold;
+    width: 53%;
+    position: absolute;
+    left: -5%;
+    top: 4%;
+    transform-origin: 0%;
+    transform: rotate(90deg)
+  }
+  
+  $child::after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background: $color-gold;
+    width: 57%;
+    position: absolute;
+    left: -5%;
+    top: 115%;
+  }
+}

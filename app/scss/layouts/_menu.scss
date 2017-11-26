@@ -1,0 +1,55 @@
+.menu__info {
+  padding: 6.5rem;
+  
+  & h2 {
+    margin-bottom: 2.5rem;
+  }
+  
+  & p {
+    letter-spacing: 3px;
+  }
+}
+
+.menu__categories {
+  
+  & > div {
+    margin-bottom: 10rem;
+    
+    &:last-child {
+      color: transparent
+    }
+  }
+
+  & h2 {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid $color-white;
+  }
+  
+  & p {
+    font-size: 1.5rem;
+    color: $color-gold;
+    margin: 2rem 0;
+  }
+}
+
+.menu__categories__items-item {
+  display: inline-block;
+  width: calc(33.33333333% - 2%);
+  border-bottom: 2px dotted $color-white;
+  &:not(:last-child) {
+    margin-right: 2.6%;
+  }
+  
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  & span {
+    display: inline-block;
+    margin: 2rem 0 6rem 0;
+    font-size: 3rem;
+  }
+}

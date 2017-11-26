@@ -1,0 +1,53 @@
+.form-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2px;
+  color: $color-white;
+  padding: 1rem;
+  
+  &--half {
+    width: 50%;
+    float: left;
+  }
+}
+
+label, input {
+  display: inline-block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input {
+  outline: none;
+  padding: 1rem;
+  background-color: $color-darkblue;
+  color: $color-gold;
+  border: 1px solid $color-gold;
+  transition: all .4s;
+  
+  &:invalid {
+    border: 1px solid orangered;
+  }
+}
+
+.select-options {  
+  max-height: 0;
+  overflow: hidden;
+
+  & span {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    // background: orange;
+    width: 100%;
+    font-size: 1.5rem;
+    
+    &:hover {
+      border-top: 1px solid $color-grey;
+      border-bottom: 1px solid $color-grey
+    }
+  }
+}

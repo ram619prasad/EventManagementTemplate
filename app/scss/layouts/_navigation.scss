@@ -1,0 +1,32 @@
+.navigation {  
+  &__list{
+    width: 68rem;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 7.5rem;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: calc((68rem - 5*18%)/5)
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-gold;
+      font-family: 'roboto';
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

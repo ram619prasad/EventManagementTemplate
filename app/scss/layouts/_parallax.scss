@@ -1,0 +1,15 @@
+// Parallax Image Styles
+.parallax {
+  height: 80rem;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  &--1 {
+    background-image: url('../images/parallax-large.jpg');
+  }
+  
+  &--2 {
+    background-image: url('../images/restaurant-large.jpeg');
+  }
+}

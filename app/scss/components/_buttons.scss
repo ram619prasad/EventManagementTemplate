@@ -1,0 +1,13 @@
+.btn {
+  color: $color-black;
+  font-size: 2rem;
+  font-weight: normal;
+  border: none;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+
+  &--gold {
+    background-color: $color-gold;
+  }
+}

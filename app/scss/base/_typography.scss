@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato/lato-regular-webfont.ttf') format("truetype"),
+       url('../fonts/Lato/lato-regular-webfont.woff') format('woff2'),
+       url('../fonts/Lato/lato-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/Roboto/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 2rem;
+  color: $color-gold;
+}
+
+.heading-tertiary {
+  color: $color-white;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-family: monospace;
+  margin: 2rem;
+  text-transform: uppercase;
+}

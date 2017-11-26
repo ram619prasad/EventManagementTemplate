@@ -1,0 +1,52 @@
+body {
+  background-color: $color-darkblack;
+  background-image: none;
+}
+
+.rsvp {
+  h2 {
+    color: $color-white;
+    font-size: 5rem;
+    font-family: monospace;
+    margin: 1rem;
+    text-transform: uppercase;
+  }
+  
+  & form {
+    margin: 5rem 0  ;
+  }
+
+  &__form {
+    display: inline-block;
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: 'lato';
+    position: relative;
+  }
+  
+  &__details {
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    border: 2px solid $color-grey;
+    padding: 3rem;
+    
+    & h2 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 100;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid $color-grey;
+    }
+    
+    & span {
+      display: block;
+      color: $color-white;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+  }
+}
